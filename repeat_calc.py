@@ -1,10 +1,12 @@
+from my_ui import write_line, in_txt
+
 def repeat():
     while True:
-        f = input('ещё раз?\n')
+        f = in_txt('ещё раз?\n')
         if f == 'y':
             simple_calc()
         elif f == 'n':
-            print("Chao!")
+            write_line("Chao!")
             exit()
         else:
-            print("Выберите "'y'" или "'n'"")
+            write_line("Выберите "'y'" или "'n'"")
